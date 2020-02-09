@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="Python爬虫">
+    <meta name="keywords" content="Python,Python爬虫">
     <meta name="description" content="Python爬虫知识关于在学习Python爬虫中一些基础知识的总结  Python爬虫学习图       1、工作原理 工作原理       2、HTTP、请求和响应（1）、什么是HTTP？ HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么样">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python爬虫知识点">
@@ -34,17 +34,18 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/response.png?raw=true">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/request-response.jpg?raw=true">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/re.png?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath1.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath2.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath3.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath4.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5-1.jpg?raw=true">
-<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg?raw=true">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath3.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath4.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5-1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/Bs4.png?raw=true">
 <meta property="article:published_time" content="2020-02-08T08:52:58.000Z">
-<meta property="article:modified_time" content="2020-02-09T11:11:58.269Z">
+<meta property="article:modified_time" content="2020-02-09T13:53:34.311Z">
 <meta property="article:author" content="Yzzz011125">
+<meta property="article:tag" content="Python">
 <meta property="article:tag" content="Python爬虫">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/PythonSpider.png?raw=true">
@@ -206,10 +207,7 @@
 <p><strong>（2）、什么是请求？</strong></p>
 <p>客户端向服务端发出一个消息，来请求做某件事情</p>
 <p><strong>（3）、什么是响应？</strong></p>
-<p>服务端接收到客户端的请求消息，并将处理信息返回给客户端，以次来表示响应</p>
-<br/>
-
-<p>以下属性为常用属性</p>
+<p>服务端接收到客户端的请求消息，并将处理信息返回给客户端，以次来表示响应，以下属性为常用属性</p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -219,6 +217,8 @@
             </figure>
 
 <center>request常用属性</center>
+<br/>
+
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -240,7 +240,7 @@
             </figure>
 
 <center>request和response</center>
-可去https://www.cnblogs.com/unknows/p/8724872.html浏览请求头和响应头属性详解
+可去浏览[请求头和响应头][https://www.cnblogs.com/unknows/p/8724872.html]属性详解
 
 <br/>
 
@@ -272,51 +272,43 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath1.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath1.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-
-<br/>
 
 <p><strong>（2）、谓语</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath2.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath2.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-
-<br/>
 
 <p><strong>（3）、通配符</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath3.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath3.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-
-<br/>
 
 <p><strong>（4）、取多个路径</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath4.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath4.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-
-<br/>
 
 <p><strong>（5）、Xpath轴</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -324,18 +316,16 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5-1.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5-1.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-
-<br/>
 
 <p><strong>（6）、功能函数</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg?raw=true" alt="" title="">
+                    <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -345,8 +335,8 @@
 
 
 <p>链接：</p>
-<p> <a href="https://www.cnblogs.com/jpfss/p/10410506.html" target="_blank" rel="noopener">https://www.cnblogs.com/jpfss/p/10410506.html</a> </p>
-<p> <a href="https://zhuanlan.zhihu.com/p/65177112" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/65177112</a> </p>
+<p> [xPath 用法总结整理][<a href="https://www.cnblogs.com/jpfss/p/10410506.html]" target="_blank" rel="noopener">https://www.cnblogs.com/jpfss/p/10410506.html]</a></p>
+<p>[Python神技能：六张表 搞定 Xpath 语法][<a href="https://zhuanlan.zhihu.com/p/65177112]" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/65177112]</a></p>
 <br/>
 
 <br/>
@@ -391,59 +381,59 @@
 
 
 
-<p>（1）、基本的GET请求</p>
+<p>1、基本的GET请求</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">  "args": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "headers": &#123;</span></span><br><span class="line"><span class="string">    "Accept": "*/*", </span></span><br><span class="line"><span class="string">    "Accept-Encoding": "gzip, deflate", </span></span><br><span class="line"><span class="string">    "Connection": "close", </span></span><br><span class="line"><span class="string">    "Host": "httpbin.org", </span></span><br><span class="line"><span class="string">    "User-Agent": "python-requests/2.18.4"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "origin": "183.64.61.29", </span></span><br><span class="line"><span class="string">  "url": "http://httpbin.org/get"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（2）、带参数的GET请求</p>
+<p>2、带参数的GET请求</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过URL中传输数据</span></span><br><span class="line">response = requests.get(<span class="string">"http://httpbin.org/get?name=germey&amp;age=22"</span>)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者用params方法</span></span><br><span class="line">data = &#123;</span><br><span class="line"> <span class="string">'name'</span>: <span class="string">'germey'</span>,</span><br><span class="line"> <span class="string">'age'</span>: <span class="number">22</span></span><br><span class="line">&#125;</span><br><span class="line">response = requests.get(<span class="string">"http://httpbin.org/get"</span>, params=data)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值都一样</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">  "args": &#123;</span></span><br><span class="line"><span class="string">    "age": "22", </span></span><br><span class="line"><span class="string">    "name": "germey"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "headers": &#123;</span></span><br><span class="line"><span class="string">    "Accept": "*/*", </span></span><br><span class="line"><span class="string">    "Accept-Encoding": "gzip, deflate", </span></span><br><span class="line"><span class="string">    "Connection": "close", </span></span><br><span class="line"><span class="string">    "Host": "httpbin.org", </span></span><br><span class="line"><span class="string">    "User-Agent": "python-requests/2.18.4"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "origin": "183.64.61.29", </span></span><br><span class="line"><span class="string">  "url": "http://httpbin.org/get?name=germey&amp;age=22"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（3）、解析json</p>
+<p>3、解析json</p>
 <p>将返回值已json的形式展示</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"http://httpbin.org/get"</span>)</span><br><span class="line">print(type(response.text))</span><br><span class="line">print(response.json())</span><br><span class="line">print(json.loads(response.text))</span><br><span class="line">print(type(response.json()))</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;class 'str'&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#123;'args': &#123;&#125;, 'headers': &#123;'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'close', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.18.4'&#125;, 'origin': '183.64.61.29', 'url': 'http://httpbin.org/get'&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#123;'args': &#123;&#125;, 'headers': &#123;'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'close', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.18.4'&#125;, 'origin': '183.64.61.29', 'url': 'http://httpbin.org/get'&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'dict'&gt;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（4）、获取二进制数据</p>
+<p>4、获取二进制数据</p>
 <p>记住返回值.content就ok了</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"https://github.com/favicon.ico"</span>)</span><br><span class="line">print(type(response.text), type(response.content))</span><br><span class="line">print(response.text)</span><br><span class="line">print(response.content)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; &lt;class 'bytes'&gt;</span></span><br><span class="line"><span class="string">乱码</span></span><br><span class="line"><span class="string">二进制数据</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（5）、添加headers</p>
+<p>5、添加headers</p>
 <p> 有些网站访问时必须带有浏览器等信息，如果不传入headers就会报错，如下 </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"https://www.zhihu.com/explore"</span>)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;html&gt;&lt;body&gt;&lt;h1&gt;500 Server Error&lt;/h1&gt;</span></span><br><span class="line"><span class="string">An internal server error occured.</span></span><br><span class="line"><span class="string">&lt;/body&gt;&lt;/html&gt;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 当传入headers时</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">headers = &#123;</span><br><span class="line"> <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'</span></span><br><span class="line">&#125;</span><br><span class="line">response = requests.get(<span class="string">"https://www.zhihu.com/explore"</span>, headers=headers)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">成功返回网页源代码</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（6）、基本POST请求</p>
+<p>6、基本POST请求</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">data = &#123;<span class="string">'name'</span>: <span class="string">'germey'</span>, <span class="string">'age'</span>: <span class="string">'22'</span>&#125;</span><br><span class="line">response = requests.post(<span class="string">"http://httpbin.org/post"</span>, data=data)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">  "args": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "data": "", </span></span><br><span class="line"><span class="string">  "files": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "form": &#123;</span></span><br><span class="line"><span class="string">    "age": "22", </span></span><br><span class="line"><span class="string">    "name": "germey"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "headers": &#123;</span></span><br><span class="line"><span class="string">    "Accept": "*/*", </span></span><br><span class="line"><span class="string">    "Accept-Encoding": "gzip, deflate", </span></span><br><span class="line"><span class="string">    "Connection": "close", </span></span><br><span class="line"><span class="string">    "Content-Length": "18", </span></span><br><span class="line"><span class="string">    "Content-Type": "application/x-www-form-urlencoded", </span></span><br><span class="line"><span class="string">    "Host": "httpbin.org", </span></span><br><span class="line"><span class="string">    "User-Agent": "python-requests/2.18.4"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "json": null, </span></span><br><span class="line"><span class="string">  "origin": "183.64.61.29", </span></span><br><span class="line"><span class="string">  "url": "http://httpbin.org/post"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 <br/>
 
 <p><strong>（2）、响应</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">'http://www.jianshu.com'</span>)</span><br><span class="line">print(type(response.status_code), response.status_code)</span><br><span class="line">print(type(response.headers), response.headers)</span><br><span class="line">print(type(response.cookies), response.cookies)</span><br><span class="line">print(type(response.url), response.url)</span><br><span class="line">print(type(response.history), response.history)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;class 'int'&gt; 200</span></span><br><span class="line"><span class="string">&lt;class 'requests.structures.CaseInsensitiveDict'&gt; &#123;'Date': 'Thu, 01 Feb 2018 20:47:08 GMT', 'Server': 'Tengine', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'X-Frame-Options': 'DENY', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'ETag': 'W/"9f70e869e7cce214b6e9d90f4ceaa53d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Set-Cookie': 'locale=zh-CN; path=/', 'X-Request-Id': '366f4cba-8414-4841-bfe2-792aeb8cf302', 'X-Runtime': '0.008350', 'Content-Encoding': 'gzip', 'X-Via': '1.1 gjf22:8 (Cdn Cache Server V2.0), 1.1 PSzqstdx2ps251:10 (Cdn Cache Server V2.0)', 'Connection': 'keep-alive'&#125;</span></span><br><span class="line"><span class="string">&lt;class 'requests.cookies.RequestsCookieJar'&gt; &lt;RequestsCookieJar[&lt;Cookie locale=zh-CN for www.jianshu.com/&gt;]&gt;</span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; https://www.jianshu.com/</span></span><br><span class="line"><span class="string">&lt;class 'list'&gt; [&lt;Response [301]&gt;]</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">'http://www.jianshu.com'</span>)</span><br><span class="line">print(type(response.text), response.text) <span class="comment"># 获取网页代码 字符串</span></span><br><span class="line">print(type(response.content), response.content) <span class="comment"># 获取字节类型响应 二进制</span></span><br><span class="line">print(type(response.status_code), response.status_code) <span class="comment"># 获取状态码</span></span><br><span class="line">print(type(response.headers), response.headers) <span class="comment"># 获取headers</span></span><br><span class="line">print(type(response.cookies), response.cookies) <span class="comment"># 获取cookies</span></span><br><span class="line">print(type(response.url), response.url) <span class="comment"># 获取所请求的url</span></span><br><span class="line">print(type(response.encoding), response.encoding)</span><br><span class="line">print(type(response.history), response.history) <span class="comment"># 获取重定向历史</span></span><br><span class="line">print(type(response.json()), response.json()) <span class="comment"># 获取json数据 将结果进行反序列化 没实现</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">第一个print是所请求整个静态网页代码</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'bytes'&gt; b'&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;\r\n&lt;body bgcolor="white"&gt;\r\n&lt;h1&gt;403 Forbidden&lt;/h1&gt;\r\n&lt;p&gt;You don\'t have permission to access the URL on this server. Sorry for the inconvenience.&lt;br/&gt;\r\nPlease report this message and include the following information to us.&lt;br/&gt;\r\nThank you very much!&lt;/p&gt;\r\n&lt;table&gt;\r\n&lt;tr&gt;\r\n&lt;td&gt;URL:&lt;/td&gt;\r\n&lt;td&gt;https://www.jianshu.com/&lt;/td&gt;\r\n&lt;/tr&gt;\r\n&lt;tr&gt;\r\n&lt;td&gt;Server:&lt;/td&gt;\r\n&lt;td&gt;zurich&lt;/td&gt;\r\n&lt;/tr&gt;\r\n&lt;tr&gt;\r\n&lt;td&gt;Date:&lt;/td&gt;\r\n&lt;td&gt;2020/02/09 19:49:21&lt;/td&gt;\r\n&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;hr/&gt;Powered by Tengine&lt;/body&gt;\r\n&lt;/html&gt;\r\n'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'int'&gt; 200</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'requests.structures.CaseInsensitiveDict'&gt; &#123;'Date': 'Thu, 01 Feb 2018 20:47:08 GMT', 'Server': 'Tengine', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'X-Frame-Options': 'DENY', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'ETag': 'W/"9f70e869e7cce214b6e9d90f4ceaa53d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Set-Cookie': 'locale=zh-CN; path=/', 'X-Request-Id': '366f4cba-8414-4841-bfe2-792aeb8cf302', 'X-Runtime': '0.008350', 'Content-Encoding': 'gzip', 'X-Via': '1.1 gjf22:8 (Cdn Cache Server V2.0), 1.1 PSzqstdx2ps251:10 (Cdn Cache Server V2.0)', 'Connection': 'keep-alive'&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'requests.cookies.RequestsCookieJar'&gt; &lt;RequestsCookieJar[&lt;Cookie locale=zh-CN for www.jianshu.com/&gt;]&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; https://www.jianshu.com/</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; ISO-8859-1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;class 'list'&gt; [&lt;Response [301]&gt;]</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
 <br/>
 
 <p><strong>（3）、高级操作</strong></p>
-<p>（1）、文件上传</p>
+<p>1、文件上传</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">files = &#123;<span class="string">'file'</span>: open(<span class="string">'cookie.txt'</span>, <span class="string">'rb'</span>)&#125;</span><br><span class="line">response = requests.post(<span class="string">"http://httpbin.org/post"</span>, files=files)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">  "args": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "data": "", </span></span><br><span class="line"><span class="string">  "files": &#123;</span></span><br><span class="line"><span class="string">    "file": "#LWP-Cookies-2.0\r\nSet-Cookie3: BAIDUID=\"D2B4E137DE67E271D87F03A8A15DC459:FG=1\"; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: BIDUPSID=D2B4E137DE67E271D87F03A8A15DC459; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: H_PS_PSSID=25641_1465_21087_17001_22159; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; discard; version=0\r\nSet-Cookie3: PSTM=1516953672; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: BDSVRTM=0; path=\"/\"; domain=\"www.baidu.com\"; path_spec; discard; version=0\r\nSet-Cookie3: BD_HOME=0; path=\"/\"; domain=\"www.baidu.com\"; path_spec; discard; version=0\r\n"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "form": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "headers": &#123;</span></span><br><span class="line"><span class="string">    "Accept": "*/*", </span></span><br><span class="line"><span class="string">    "Accept-Encoding": "gzip, deflate", </span></span><br><span class="line"><span class="string">    "Connection": "close", </span></span><br><span class="line"><span class="string">    "Content-Length": "909", </span></span><br><span class="line"><span class="string">    "Content-Type": "multipart/form-data; boundary=84835f570cfa44da8f4a062b097cad49", </span></span><br><span class="line"><span class="string">    "Host": "httpbin.org", </span></span><br><span class="line"><span class="string">    "User-Agent": "python-requests/2.18.4"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "json": null, </span></span><br><span class="line"><span class="string">  "origin": "183.64.61.29", </span></span><br><span class="line"><span class="string">  "url": "http://httpbin.org/post"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（2）、获取cookie</p>
+<p>2、获取cookie</p>
 <p> 当需要cookie时，直接调用response.cookie:(response为请求后的返回值) </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"https://www.baidu.com"</span>)</span><br><span class="line">print(response.cookies)</span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> response.cookies.items():</span><br><span class="line">   print(key + <span class="string">'='</span> + value)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;RequestsCookieJar[&lt;Cookie BDORZ=27315 for .baidu.com/&gt;]&gt;</span></span><br><span class="line"><span class="string">BDORZ=27315</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>（3）、会话维持、模拟登录</p>
+<p>3、会话维持、模拟登录</p>
 <p> 如果某个响应中包含一些Cookie，你可以快速访问它们： </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">r = requests.get(<span class="string">'http://www.google.com.hk/'</span>)</span><br><span class="line">print(r.cookies[<span class="string">'NID'</span>])</span><br><span class="line">print(tuple(r.cookies))</span><br></pre></td></tr></table></figure>
 
@@ -452,13 +442,13 @@
 
 
 
-<p>（4）、证书验证</p>
+<p>4、证书验证</p>
 <p> 因为12306有一个错误证书，我们那它的网站做测试会出现下面的情况，证书不是官方证书，浏览器会识别出一个错误，所以正常进入这样的网站代码如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> requests.packages <span class="keyword">import</span> urllib3</span><br><span class="line"></span><br><span class="line">urllib3.disable_warnings()</span><br><span class="line">response = requests.get(<span class="string">'https://www.12306.cn'</span>, verify=<span class="literal">False</span>)</span><br><span class="line">print(response.status_code)</span><br></pre></td></tr></table></figure>
 
 <p>将verify设置位False即可，返回的状态码为200</p>
 <p>urllib3.disable_warnings()这条命令主要用于消除警告信息</p>
-<p>（5）、代理设置</p>
+<p>5、代理设置</p>
 <p>在进行爬虫爬取时，有时候爬虫会被服务器给屏蔽掉，这时采用的方法主要有降低访问时间，通过代理ip访问，如下： </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">proxies = &#123;</span><br><span class="line"> <span class="string">"http"</span>: <span class="string">"http://127.0.0.1:9743"</span>,</span><br><span class="line"> <span class="string">"https"</span>: <span class="string">"https://127.0.0.1:9743"</span>,</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"https://www.taobao.com"</span>, proxies=proxies)</span><br><span class="line">print(response.status_code)</span><br></pre></td></tr></table></figure>
 
@@ -467,18 +457,18 @@
 
 
 
-<p>（6）、超时设置</p>
+<p>6、超时设置</p>
 <p> 访问有些网站时可能会超时，这时设置好timeout就可以解决这个问题 </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> requests.exceptions <span class="keyword">import</span> ReadTimeout</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">     response = requests.get(<span class="string">"http://httpbin.org/get"</span>, timeout = <span class="number">0.5</span>)</span><br><span class="line">     print(response.status_code)</span><br><span class="line"><span class="keyword">except</span> ReadTimeout:</span><br><span class="line"> 	print(<span class="string">'Timeout'</span>)</span><br></pre></td></tr></table></figure>
 
 <p> 正常访问，状态吗返回200 </p>
-<p>（7）、认证设置</p>
+<p>7、认证设置</p>
 <p> 如果碰到需要认证的网站可以通过requests.auth模块实现 </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> requests.auth <span class="keyword">import</span> HTTPBasicAuth</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"http://120.27.34.24:9001/"</span>,auth=HTTPBasicAuth(<span class="string">"user"</span>,<span class="string">"123"</span>))</span><br><span class="line">print(response.status_code)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 另外一种方法</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">"http://120.27.34.24:9001/"</span>,auth=(<span class="string">"user"</span>,<span class="string">"123"</span>))</span><br><span class="line">print(response.status_code)</span><br></pre></td></tr></table></figure>
 
 
 
-<p>（8）、异常处理</p>
+<p>8、异常处理</p>
 <p>遇到网络问题（如：DNS查询失败、拒绝连接等）时，Requests会抛出一个ConnectionError 异常。</p>
 <p>遇到罕见的无效HTTP响应时，Requests则会抛出一个 HTTPError 异常。</p>
 <p>若请求超时，则抛出一个 Timeout 异常。</p>
@@ -490,23 +480,127 @@
 
 
 
-
-
-<p>原链接：<a href="https://blog.csdn.net/byweiker/article/details/79234853" target="_blank" rel="noopener">https://blog.csdn.net/byweiker/article/details/79234853</a> </p>
+<p>链接：</p>
+<p>[数据爬虫（三）：python中requests库使用方法详解][<a href="https://blog.csdn.net/byweiker/article/details/79234853]" target="_blank" rel="noopener">https://blog.csdn.net/byweiker/article/details/79234853]</a></p>
 <br/>
 
 <br/>
 
 
 
-<h3 id="7、操作浏览器"><a href="#7、操作浏览器" class="headerlink" title="7、操作浏览器"></a>7、操作浏览器</h3><p>selenium + Headless Chrome</p>
+<h3 id="7、操作浏览器"><a href="#7、操作浏览器" class="headerlink" title="7、操作浏览器"></a>7、操作浏览器</h3><p><strong>selenium + Headless Chrome</strong>为模拟操作浏览器的最佳方案</p>
+<br/>
+
+
+
+<p> <strong>selenium</strong></p>
+<p>（1）、什么是<strong>selenium</strong>？</p>
+<p>selenium 是一个用于Web应用程序测试的工具。Selenium测试直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Mozilla Firefox，Safari，Google Chrome，Opera等。selenium 是一套完整的web应用程序测试系统，包含了测试的录制（selenium IDE）,编写及运行（Selenium Remote Control）和测试的并行处理（Selenium Grid）。<br> Selenium的核心Selenium Core基于JsUnit，完全由JavaScript编写，因此可以用于任何支持JavaScript的浏览器上。<br> selenium可以模拟真实浏览器，自动化测试工具，支持多种浏览器，爬虫中主要用来解决JavaScript渲染问题。<br> <strong>这里要说一下比较重要的PhantomJS,PhantomJS是一个而基于WebKit的服务端JavaScript API,支持Web而不需要浏览器支持，其快速、原生支持各种Web标准：Dom处理，CSS选择器，JSON等等。PhantomJS可以用用于页面自动化、网络监测、网页截屏，以及无界面测试，但作者弃更了，用Headless进行替代</strong></p>
+<br/>
+
+<p>（2）、<strong>基本用法</strong></p>
+<p>1、声明浏览器对象</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">browser = webdriver.Firefox()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 若使用 Headless Chrome 的话，就用下面的代码进行声明浏览器对象，与下面 Headless Chrome 的代码相同</span></span><br><span class="line"><span class="comment"># browser = webdriver.Chrome(executable_path=path, chrome_options=chrome_options)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>2、查找元素</p>
+<p><strong>单个元素查找</strong></p>
+<p> 这里我们通过2种不同的方式去获取响应的元素，第一种是通过id的方式，第二个中是CSS选择器，结果都是相同的。 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome() <span class="comment"># 声明浏览器</span></span><br><span class="line">url = <span class="string">'https:www.taobao.com'</span></span><br><span class="line">browser.get(url) <span class="comment"># 打开浏览器预设网址</span></span><br><span class="line">input_first = browser.find_element_by_id(<span class="string">'q'</span>)</span><br><span class="line">input_two = browser.find_element_by_css_selector(<span class="string">'#q'</span>)</span><br><span class="line">print(input_first)</span><br><span class="line">print(input_two)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&lt;selenium.webdriver.remote.webelement.WebElement (session="9aaa01da6545ba2013cc432bcb9abfda", element="0.5325244323105505-1")&gt;</span></span><br><span class="line"><span class="string">&lt;selenium.webdriver.remote.webelement.WebElement (session="9aaa01da6545ba2013cc432bcb9abfda", element="0.5325244323105505-1")&gt;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<p>这里列举以下常用的查找元素方法：</p>
+<ol>
+<li>通过id定位元素：find_element_by_id(“id_vaule”)</li>
+<li>通过name定位元素：find_element_by_name(“name_vaule”)</li>
+<li>通过tag_name定位元素：find_element_by_tag_name(“tag_name_vaule”)</li>
+<li>通过class_name定位元素：find_element_by_class_name(“class_name”)</li>
+<li>通过css定位元素：find_element_by_css_selector()</li>
+<li>通过xpath定位元素：find_element_by_xpath(“xpath”)</li>
+<li>通过link：find_element_by_link_text(“text_vaule”)</li>
+<li>通过a链接的文本定位元素：find_element_by_partial_link_text()</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome() <span class="comment"># 声明浏览器</span></span><br><span class="line">url = <span class="string">'https:www.taobao.com'</span></span><br><span class="line">browser.get(url) <span class="comment"># 打开浏览器预设网址</span></span><br><span class="line"></span><br><span class="line">test_id = browser.find_element_by_id(<span class="string">'q'</span>)</span><br><span class="line">test_name = browser.find_element_by_name(<span class="string">'q'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>下面这种方式是比较通用的一种方式：这里需要记住By模块所以需要导入 from selenium.webdriver.common.by import By</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">url = <span class="string">'https://www.taobao.com'</span></span><br><span class="line">browser.get(url)</span><br><span class="line">input_1 = browser.find_element(By.ID, <span class="string">'q'</span>) <span class="comment"># 这里的By.ID可以换成其他的，例如By.NAME等</span></span><br><span class="line">print(input_1)</span><br><span class="line"><span class="comment"># &lt;selenium.webdriver.remote.webelement.WebElement (session="9aaa01da6545ba2013cc432bcb9abfda", element="0.5325244323105505-1")&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这几种方法都是通用的<del>~</del></p>
+<br/>
+
+<p><strong>多个元素查找</strong></p>
+<p>其实多个元素和单个元素的区别就在于 <strong>find_elements</strong> 和 <strong>find_element</strong> 中最后的s，在其他使用上没什么区别，示例如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">url = <span class="string">'https://www.taobao.com'</span></span><br><span class="line">browser.get(url)</span><br><span class="line">input = browser.find_elements_by_css_selector(<span class="string">'.service-bd li'</span>)</span><br><span class="line">print(input)</span><br><span class="line">browser.close()</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">输出为一个列表形式</span></span><br><span class="line"><span class="string">[&lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-1")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-2")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-5")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-10")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-11")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-12")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-13")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-14")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-15")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="42d192ca36f75170ab489e4839df0980", element="0.73211490098068-16")&gt;]</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<p>当然上面的方式也是可以通过导入 from selenium.webdriver.common.by import By</p>
+<p>这种方式实现 lis = browser.find_elements(By.CSS_SELECTOR,’.service-bd li’)</p>
+<p>同样的在单个元素中查找的方法在多个元素查找中同样存在：<br> find_elements_by_name<br> find_elements_by_id<br> find_elements_by_xpath<br> find_elements_by_link_text<br> find_elements_by_partial_link_text<br> find_elements_by_tag_name<br> find_elements_by_class_name<br> find_elements_by_css_selector</p>
+<p>示例就不放了<del>~</del></p>
+<br/>
+
+<p><strong>元素交互作用</strong></p>
+<p>对于获取的元素调用交互方法 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">browser.get(url=<span class="string">'https://www.baidu.com'</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">input = browser.find_element_by_css_selector(<span class="string">'#kw'</span>)</span><br><span class="line">input.send_keys(<span class="string">'韩国女团'</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">input.clear()</span><br><span class="line">input.send_keys(<span class="string">'后背摇'</span>)</span><br><span class="line">button = browser.find_element_by_css_selector(<span class="string">'#su'</span>)</span><br><span class="line">button.click()</span><br><span class="line">time.sleep(<span class="number">10</span>)</span><br><span class="line">browser.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行的结果可以看出程序会自动打开Chrome浏览器并打开百度页面输入韩国女团,2秒后删除，重新输入后背摇，并点击搜索，10秒后关闭浏览器</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<p><strong>交互动作</strong></p>
+<p>将动作附加到动作链中串行执行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver <span class="keyword">import</span> ActionChains</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line"></span><br><span class="line">url = <span class="string">"http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable"</span></span><br><span class="line">browser.get(url)</span><br><span class="line">browser.switch_to.frame(<span class="string">'iframeResult'</span>)</span><br><span class="line">source = browser.find_element_by_css_selector(<span class="string">'#draggable'</span>)</span><br><span class="line">target = browser.find_element_by_css_selector(<span class="string">'#droppable'</span>)</span><br><span class="line">actions = ActionChains(browser)</span><br><span class="line">actions.drag_and_drop(source, target)</span><br><span class="line">actions.perform()</span><br></pre></td></tr></table></figure>
+
+<p><br/><strong>执行JavaScript</strong></p>
+<p>可以直接调用js方法来实现一些操作，下面的例子是通过登录知乎然后通过Js翻到页面底部，并弹框提示 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">browser.get(<span class="string">"http://www.zhihu.com/explore"</span>)</span><br><span class="line">browser.execute_script(<span class="string">'window.scrollTo(0,document.body.scrollHeight)'</span>)</span><br><span class="line">browser.execute_script(<span class="string">'alert("To Bottom")'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>可以用Js滚动到最底部</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># x为横坐标 y为纵坐标</span></span><br><span class="line"><span class="comment"># Js控制滚动条的位置</span></span><br><span class="line">window.scrollTo(x,y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 竖向滚动条置顶</span></span><br><span class="line">window.scrollTo(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="comment"># 竖向滚动条置低</span></span><br><span class="line">window.scrollTo(<span class="number">0</span>,document.body.scrollHeight)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Js控制</span></span><br><span class="line">textarea = document.getElementById(<span class="string">'textarea'</span>)</span><br><span class="line">textarea.scrollTop = textarea.scrollHeight</span><br></pre></td></tr></table></figure>
+
+
+
+<br/>
+
+<p><strong>获取元素属性</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">browser.get(<span class="string">"http://www.zhihu.com/explore"</span>)</span><br><span class="line">logo = browser.find_element_by_css_selector(<span class="string">'.zu-top-link-logo'</span>)</span><br><span class="line">print(logo)</span><br><span class="line">print(logo.get_attribute(<span class="string">'class'</span>)) <span class="comment"># 获取class元素属性</span></span><br><span class="line">print(logo.get_attribute(<span class="string">'id'</span>)) <span class="comment"># 获取id元素属性</span></span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">browser.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&lt;selenium.webdriver.remote.webelement.WebElement (session="b72dbd6906debbca7d0b49ab6e064d92", element="0.511689875475734-1")&gt;</span></span><br><span class="line"><span class="string">zu-top-link-logo</span></span><br><span class="line"><span class="string">zh-top-link-logo</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<p><strong>获取文本值、ID、位置、标签名</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome()</span><br><span class="line">browser.get(<span class="string">"http://www.zhihu.com/explore"</span>)</span><br><span class="line">logo = browser.find_element_by_css_selector(<span class="string">'.zu-top-link-logo'</span>)</span><br><span class="line">print(logo)</span><br><span class="line">print(logo.text) <span class="comment"># 获取文本值</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce8814d69f8e1291c88ce6f76b6050a2", element="0.9868611170776878-1")&gt;</span></span><br><span class="line"><span class="string">知乎</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">browser.get(url)</span><br><span class="line">input = browser.find_element_by_css_selector(<span class="string">'.zu-top-add-question'</span>)</span><br><span class="line">print(input.id) <span class="comment"># 获取ID</span></span><br><span class="line">print(input.location) <span class="comment"># 获取位置</span></span><br><span class="line">print(input.tag_name) <span class="comment"># 获取标签名</span></span><br><span class="line">print(input.size) <span class="comment"># 获取长度</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">0.022998219885927318-1</span></span><br><span class="line"><span class="string">&#123;'x': 759, 'y': 7&#125;</span></span><br><span class="line"><span class="string">button</span></span><br><span class="line"><span class="string">&#123;'height': 32, 'width': 66&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+
+
+<p> <strong>Headless Chrome</strong></p>
+<p>下载[Chrome驱动][ <a href="http://chromedriver.storage.googleapis.com/index.html]，要先看浏览器版本，然后去[关系映射表][http://blog.csdn.net/huilan_same/article/details/51896672]对比，找到合适的驱动号，才能成功" target="_blank" rel="noopener">http://chromedriver.storage.googleapis.com/index.html]，要先看浏览器版本，然后去[关系映射表][http://blog.csdn.net/huilan_same/article/details/51896672]对比，找到合适的驱动号，才能成功</a>~</p>
+<br/>
+
+<p>使用代码如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个参数对象，用来控制chrome以无界面模式打开</span></span><br><span class="line">chrome_options = Options()</span><br><span class="line">chrome_options.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">chrome_options.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line"><span class="comment"># 驱动路径</span></span><br><span class="line">path = <span class="string">r'谷歌驱动所在的本地位置'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 声明浏览器对象，与selenium相连</span></span><br><span class="line">browser = webdriver.Chrome(executable_path=path, chrome_options=chrome_options)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
 <br/>
 
 <br/>
 
 
 
-<h3 id="8、Tesseract"><a href="#8、Tesseract" class="headerlink" title="8、Tesseract"></a>8、Tesseract</h3><br/>
+<h3 id="8、Tesseract"><a href="#8、Tesseract" class="headerlink" title="8、Tesseract"></a>8、Tesseract</h3><p><strong>Tesseract</strong>基于<strong>OCR</strong>，即Optical Character Recognition，光学字符识别，是指通过扫描字符，然后通过其形状将其翻译成电子文本的过程。对于图形验证码来说，它们都是一些不规则的字符，这些字符确实是由字符稍加扭曲变换得到的内容。 成功率很高，不能说是百分之百能成功，有些畸形字符识别错误。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pytesseract</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> ImageEnhance</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开图片</span></span><br><span class="line">img = Image.open(<span class="string">'sg3p.png'</span>)</span><br><span class="line"></span><br><span class="line">img = img.convert(<span class="string">'RGB'</span>)</span><br><span class="line">enhancer = ImageEnhance.Color(img)</span><br><span class="line">enhancer = enhancer.enhance(<span class="number">0</span>)</span><br><span class="line">enhancer = ImageEnhance.Brightness(enhancer)</span><br><span class="line">enhancer = enhancer.enhance(<span class="number">2</span>)</span><br><span class="line">enhancer = ImageEnhance.Contrast(enhancer)</span><br><span class="line">enhancer = enhancer.enhance(<span class="number">8</span>)</span><br><span class="line">enhancer = ImageEnhance.Sharpness(enhancer)</span><br><span class="line">img = enhancer.enhance(<span class="number">20</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 转化为灰度图片</span></span><br><span class="line">img = img.convert(<span class="string">'L'</span>)</span><br><span class="line"><span class="comment"># img.show()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 二值化处理</span></span><br><span class="line">threshold = <span class="number">140</span></span><br><span class="line">table = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">256</span>):</span><br><span class="line">    <span class="keyword">if</span> i &lt; threshold:</span><br><span class="line">        table.append(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        table.append(<span class="number">1</span>)</span><br><span class="line">out = img.point(table, <span class="string">'1'</span>)</span><br><span class="line"><span class="comment"># out.show()</span></span><br><span class="line"><span class="comment"># exit()</span></span><br><span class="line">img = img.convert(<span class="string">'RGB'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 识别图片</span></span><br><span class="line">print(pytesseract.image_to_string(img))</span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<p>Github地址： <a href="https://github.com/tesseract-ocr/tesseract" target="_blank" rel="noopener">https://github.com/tesseract-ocr/tesseract</a> </p>
+<br/>
 
 <br/>
 
@@ -542,7 +636,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-02-09T11:11:58.269Z" itemprop="dateUpdated">2020-02-09 19:11:58</time>
+    Last updated: <time datetime="2020-02-09T13:53:34.311Z" itemprop="dateUpdated">2020-02-09 21:53:34</time>
 </span><br>
 
 
@@ -566,7 +660,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python%E7%88%AC%E8%99%AB/" rel="tag">Python爬虫</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python%E7%88%AC%E8%99%AB/" rel="tag">Python爬虫</a></li></ul>
 
 
             
