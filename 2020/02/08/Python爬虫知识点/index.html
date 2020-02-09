@@ -21,12 +21,12 @@
     
     
     <meta name="keywords" content="Python爬虫">
-    <meta name="description" content="Python爬虫知识关于在学习Python爬虫中一些基础知识的总结  Python爬虫学习图       1、工作原理 工作原理         2、HTTP、请求和响应（1）、什么是HTTP？HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么">
+    <meta name="description" content="Python爬虫知识关于在学习Python爬虫中一些基础知识的总结  Python爬虫学习图       1、工作原理 工作原理       2、HTTP、请求和响应（1）、什么是HTTP？ HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么样">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python爬虫知识点">
 <meta property="og:url" content="http://yoursite.com/2020/02/08/Python%E7%88%AC%E8%99%AB%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Yzzz011125&#39;s Blog">
-<meta property="og:description" content="Python爬虫知识关于在学习Python爬虫中一些基础知识的总结  Python爬虫学习图       1、工作原理 工作原理         2、HTTP、请求和响应（1）、什么是HTTP？HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么">
+<meta property="og:description" content="Python爬虫知识关于在学习Python爬虫中一些基础知识的总结  Python爬虫学习图       1、工作原理 工作原理       2、HTTP、请求和响应（1）、什么是HTTP？ HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么样">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/PythonSpider.png?raw=true">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/main.jpg?raw=true">
@@ -43,7 +43,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg?raw=true">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/Bs4.png?raw=true">
 <meta property="article:published_time" content="2020-02-08T08:52:58.000Z">
-<meta property="article:modified_time" content="2020-02-09T09:10:38.054Z">
+<meta property="article:modified_time" content="2020-02-09T11:11:58.269Z">
 <meta property="article:author" content="Yzzz011125">
 <meta property="article:tag" content="Python爬虫">
 <meta name="twitter:card" content="summary">
@@ -164,7 +164,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python爬虫知识"><span class="post-toc-number">1.</span> <span class="post-toc-text">Python爬虫知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、工作原理"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">1、工作原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、HTTP、请求和响应"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">2、HTTP、请求和响应</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（1）、什么是HTTP？"><span class="post-toc-number">1.0.2.0.1.</span> <span class="post-toc-text">（1）、什么是HTTP？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（2）、什么是请求？"><span class="post-toc-number">1.0.2.0.2.</span> <span class="post-toc-text">（2）、什么是请求？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（3）、什么是响应？"><span class="post-toc-number">1.0.2.0.3.</span> <span class="post-toc-text">（3）、什么是响应？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（4）、request和response"><span class="post-toc-number">1.0.2.0.4.</span> <span class="post-toc-text">（4）、request和response</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、正则表达式"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">3、正则表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、Xpath"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">4、Xpath</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（1）、选取节点"><span class="post-toc-number">1.0.4.0.1.</span> <span class="post-toc-text">（1）、选取节点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（2）、谓语"><span class="post-toc-number">1.0.4.0.2.</span> <span class="post-toc-text">（2）、谓语</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（3）、通配符"><span class="post-toc-number">1.0.4.0.3.</span> <span class="post-toc-text">（3）、通配符</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（4）、取多个路径"><span class="post-toc-number">1.0.4.0.4.</span> <span class="post-toc-text">（4）、取多个路径</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（5）、Xpath轴"><span class="post-toc-number">1.0.4.0.5.</span> <span class="post-toc-text">（5）、Xpath轴</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（6）、功能函数"><span class="post-toc-number">1.0.4.0.6.</span> <span class="post-toc-text">（6）、功能函数</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、Bs4"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">5、Bs4</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、Requests"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">6、Requests</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（1）、以下为各种请求方式"><span class="post-toc-number">1.0.6.0.1.</span> <span class="post-toc-text">（1）、以下为各种请求方式</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（2）、响应"><span class="post-toc-number">1.0.6.0.2.</span> <span class="post-toc-text">（2）、响应</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#（3）、高级操作"><span class="post-toc-number">1.0.6.0.3.</span> <span class="post-toc-text">（3）、高级操作</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、操作浏览器"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">7、操作浏览器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、Tesseract"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">8、Tesseract</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9、多进程-多线程"><span class="post-toc-number">1.0.9.</span> <span class="post-toc-text">9、多进程+多线程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10、Scrapy框架"><span class="post-toc-number">1.0.10.</span> <span class="post-toc-text">10、Scrapy框架</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#11、scrapy-redis框架组件"><span class="post-toc-number">1.0.11.</span> <span class="post-toc-text">11、scrapy-redis框架组件</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python爬虫知识"><span class="post-toc-text">Python爬虫知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、工作原理"><span class="post-toc-text">1、工作原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、HTTP、请求和响应"><span class="post-toc-text">2、HTTP、请求和响应</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、正则表达式"><span class="post-toc-text">3、正则表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、Xpath"><span class="post-toc-text">4、Xpath</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、Bs4"><span class="post-toc-text">5、Bs4</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、Requests"><span class="post-toc-text">6、Requests</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、操作浏览器"><span class="post-toc-text">7、操作浏览器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、Tesseract"><span class="post-toc-text">8、Tesseract</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9、多进程-多线程"><span class="post-toc-text">9、多进程+多线程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10、Scrapy框架"><span class="post-toc-text">10、Scrapy框架</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#11、scrapy-redis框架组件"><span class="post-toc-text">11、scrapy-redis框架组件</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -195,17 +195,18 @@
 
 <h3 id="1、工作原理"><a href="#1、工作原理" class="headerlink" title="1、工作原理"></a>1、工作原理</h3><p><img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/main.jpg?raw=true" alt=""></p>
 <center>工作原理</center>
-
-
 <br/>
 
 <br/>
 
 
 
-<h3 id="2、HTTP、请求和响应"><a href="#2、HTTP、请求和响应" class="headerlink" title="2、HTTP、请求和响应"></a>2、HTTP、请求和响应</h3><h5 id="（1）、什么是HTTP？"><a href="#（1）、什么是HTTP？" class="headerlink" title="（1）、什么是HTTP？"></a>（1）、什么是HTTP？</h5><p>HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么样的格式来书写</p>
-<h5 id="（2）、什么是请求？"><a href="#（2）、什么是请求？" class="headerlink" title="（2）、什么是请求？"></a>（2）、什么是请求？</h5><p>客户端向服务端发出一个消息，来请求做某件事情</p>
-<h5 id="（3）、什么是响应？"><a href="#（3）、什么是响应？" class="headerlink" title="（3）、什么是响应？"></a>（3）、什么是响应？</h5><p>服务端接收到客户端的请求消息，并将处理信息返回给客户端，以次来表示响应</p>
+<h3 id="2、HTTP、请求和响应"><a href="#2、HTTP、请求和响应" class="headerlink" title="2、HTTP、请求和响应"></a>2、HTTP、请求和响应</h3><p><strong>（1）、什么是HTTP？</strong></p>
+<p>HTTP全称是HyperText Transfer Protocol（超文本传输协议），简单来说，就是能让服务器能理解浏览器所发出的请求消息，让浏览器能理解服务器所做出的响应，它只规定了请求与响应应该以什么样的格式来书写</p>
+<p><strong>（2）、什么是请求？</strong></p>
+<p>客户端向服务端发出一个消息，来请求做某件事情</p>
+<p><strong>（3）、什么是响应？</strong></p>
+<p>服务端接收到客户端的请求消息，并将处理信息返回给客户端，以次来表示响应</p>
 <br/>
 
 <p>以下属性为常用属性</p>
@@ -229,7 +230,8 @@
 <center>response常用属性</center>
 <br/>
 
-<h5 id="（4）、request和response"><a href="#（4）、request和response" class="headerlink" title="（4）、request和response"></a>（4）、request和response</h5><figure class="image-bubble">
+<p><strong>（4）、request和response</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/request-response.jpg?raw=true" alt="" title="">
@@ -238,7 +240,7 @@
             </figure>
 
 <center>request和response</center>
-若属性不全，可以去https://www.cnblogs.com/unknows/p/8724872.html浏览请求头和响应头属性详解
+可去https://www.cnblogs.com/unknows/p/8724872.html浏览请求头和响应头属性详解
 
 <br/>
 
@@ -266,7 +268,8 @@
 
 <p><strong>XPath</strong> 是一门在 XML 文档中查找信息的语言，XPath 用于在 XML 文档中通过元素和属性进行导航。Python中有Xpath模块可使用</p>
 <p>所有在使用Xpath之前要生成对象<strong>tree = etree.parse(‘网页’)</strong>，才能使用<strong>tree.xpath(‘解析式’)</strong></p>
-<h5 id="（1）、选取节点"><a href="#（1）、选取节点" class="headerlink" title="（1）、选取节点"></a>（1）、选取节点</h5><figure class="image-bubble">
+<p><strong>（1）、选取节点</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath1.jpg?raw=true" alt="" title="">
@@ -276,7 +279,8 @@
 
 <br/>
 
-<h5 id="（2）、谓语"><a href="#（2）、谓语" class="headerlink" title="（2）、谓语"></a>（2）、谓语</h5><figure class="image-bubble">
+<p><strong>（2）、谓语</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath2.jpg?raw=true" alt="" title="">
@@ -286,7 +290,8 @@
 
 <br/>
 
-<h5 id="（3）、通配符"><a href="#（3）、通配符" class="headerlink" title="（3）、通配符"></a>（3）、通配符</h5><figure class="image-bubble">
+<p><strong>（3）、通配符</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath3.jpg?raw=true" alt="" title="">
@@ -296,7 +301,8 @@
 
 <br/>
 
-<h5 id="（4）、取多个路径"><a href="#（4）、取多个路径" class="headerlink" title="（4）、取多个路径"></a>（4）、取多个路径</h5><figure class="image-bubble">
+<p><strong>（4）、取多个路径</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath4.jpg?raw=true" alt="" title="">
@@ -306,7 +312,8 @@
 
 <br/>
 
-<h5 id="（5）、Xpath轴"><a href="#（5）、Xpath轴" class="headerlink" title="（5）、Xpath轴"></a>（5）、Xpath轴</h5><figure class="image-bubble">
+<p><strong>（5）、Xpath轴</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath5.jpg?raw=true" alt="" title="">
@@ -324,7 +331,8 @@
 
 <br/>
 
-<h5 id="（6）、功能函数"><a href="#（6）、功能函数" class="headerlink" title="（6）、功能函数"></a>（6）、功能函数</h5><figure class="image-bubble">
+<p><strong>（6）、功能函数</strong></p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/xpath6.jpg?raw=true" alt="" title="">
@@ -378,7 +386,8 @@
 </blockquote>
 <br/>
 
-<h5 id="（1）、以下为各种请求方式"><a href="#（1）、以下为各种请求方式" class="headerlink" title="（1）、以下为各种请求方式"></a>（1）、以下为各种请求方式</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">requests.get(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line">requests.post(<span class="string">'http://httpbin.org/post'</span>)</span><br><span class="line">requests.put(<span class="string">'http://httpbin.org/put'</span>)</span><br><span class="line">requests.delete(<span class="string">'http://httpbin.org/delete'</span>)</span><br><span class="line">requests.head(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line">requests.options(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">含义：</span></span><br><span class="line"><span class="string">1、GET： 请求指定的页面信息，并返回实体主体。</span></span><br><span class="line"><span class="string">2、HEAD： 只请求页面的首部。</span></span><br><span class="line"><span class="string">3、POST： 请求服务器接受所指定的文档作为对所标识的URI的新的从属实体。</span></span><br><span class="line"><span class="string">4、PUT： 从客户端向服务器传送的数据取代指定的文档的内容。</span></span><br><span class="line"><span class="string">5、DELETE： 请求服务器删除指定的页面。</span></span><br><span class="line"><span class="string">6、get 和 post比较常见 GET请求将提交的数据放置在HTTP请求协议头中</span></span><br><span class="line"><span class="string">7、POST提交的数据则放在实体数据中</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+<p><strong>（1）、以下为各种请求方式</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">requests.get(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line">requests.post(<span class="string">'http://httpbin.org/post'</span>)</span><br><span class="line">requests.put(<span class="string">'http://httpbin.org/put'</span>)</span><br><span class="line">requests.delete(<span class="string">'http://httpbin.org/delete'</span>)</span><br><span class="line">requests.head(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line">requests.options(<span class="string">'http://httpbin.org/get'</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">含义：</span></span><br><span class="line"><span class="string">1、GET： 请求指定的页面信息，并返回实体主体。</span></span><br><span class="line"><span class="string">2、HEAD： 只请求页面的首部。</span></span><br><span class="line"><span class="string">3、POST： 请求服务器接受所指定的文档作为对所标识的URI的新的从属实体。</span></span><br><span class="line"><span class="string">4、PUT： 从客户端向服务器传送的数据取代指定的文档的内容。</span></span><br><span class="line"><span class="string">5、DELETE： 请求服务器删除指定的页面。</span></span><br><span class="line"><span class="string">6、get 和 post比较常见 GET请求将提交的数据放置在HTTP请求协议头中</span></span><br><span class="line"><span class="string">7、POST提交的数据则放在实体数据中</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -415,13 +424,15 @@
 
 <br/>
 
-<h5 id="（2）、响应"><a href="#（2）、响应" class="headerlink" title="（2）、响应"></a>（2）、响应</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">'http://www.jianshu.com'</span>)</span><br><span class="line">print(type(response.status_code), response.status_code)</span><br><span class="line">print(type(response.headers), response.headers)</span><br><span class="line">print(type(response.cookies), response.cookies)</span><br><span class="line">print(type(response.url), response.url)</span><br><span class="line">print(type(response.history), response.history)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;class 'int'&gt; 200</span></span><br><span class="line"><span class="string">&lt;class 'requests.structures.CaseInsensitiveDict'&gt; &#123;'Date': 'Thu, 01 Feb 2018 20:47:08 GMT', 'Server': 'Tengine', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'X-Frame-Options': 'DENY', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'ETag': 'W/"9f70e869e7cce214b6e9d90f4ceaa53d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Set-Cookie': 'locale=zh-CN; path=/', 'X-Request-Id': '366f4cba-8414-4841-bfe2-792aeb8cf302', 'X-Runtime': '0.008350', 'Content-Encoding': 'gzip', 'X-Via': '1.1 gjf22:8 (Cdn Cache Server V2.0), 1.1 PSzqstdx2ps251:10 (Cdn Cache Server V2.0)', 'Connection': 'keep-alive'&#125;</span></span><br><span class="line"><span class="string">&lt;class 'requests.cookies.RequestsCookieJar'&gt; &lt;RequestsCookieJar[&lt;Cookie locale=zh-CN for www.jianshu.com/&gt;]&gt;</span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; https://www.jianshu.com/</span></span><br><span class="line"><span class="string">&lt;class 'list'&gt; [&lt;Response [301]&gt;]</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+<p><strong>（2）、响应</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">response = requests.get(<span class="string">'http://www.jianshu.com'</span>)</span><br><span class="line">print(type(response.status_code), response.status_code)</span><br><span class="line">print(type(response.headers), response.headers)</span><br><span class="line">print(type(response.cookies), response.cookies)</span><br><span class="line">print(type(response.url), response.url)</span><br><span class="line">print(type(response.history), response.history)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&lt;class 'int'&gt; 200</span></span><br><span class="line"><span class="string">&lt;class 'requests.structures.CaseInsensitiveDict'&gt; &#123;'Date': 'Thu, 01 Feb 2018 20:47:08 GMT', 'Server': 'Tengine', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'X-Frame-Options': 'DENY', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'ETag': 'W/"9f70e869e7cce214b6e9d90f4ceaa53d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Set-Cookie': 'locale=zh-CN; path=/', 'X-Request-Id': '366f4cba-8414-4841-bfe2-792aeb8cf302', 'X-Runtime': '0.008350', 'Content-Encoding': 'gzip', 'X-Via': '1.1 gjf22:8 (Cdn Cache Server V2.0), 1.1 PSzqstdx2ps251:10 (Cdn Cache Server V2.0)', 'Connection': 'keep-alive'&#125;</span></span><br><span class="line"><span class="string">&lt;class 'requests.cookies.RequestsCookieJar'&gt; &lt;RequestsCookieJar[&lt;Cookie locale=zh-CN for www.jianshu.com/&gt;]&gt;</span></span><br><span class="line"><span class="string">&lt;class 'str'&gt; https://www.jianshu.com/</span></span><br><span class="line"><span class="string">&lt;class 'list'&gt; [&lt;Response [301]&gt;]</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
 
 <br/>
 
-<h5 id="（3）、高级操作"><a href="#（3）、高级操作" class="headerlink" title="（3）、高级操作"></a>（3）、高级操作</h5><p>（1）、文件上传</p>
+<p><strong>（3）、高级操作</strong></p>
+<p>（1）、文件上传</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"> </span><br><span class="line">files = &#123;<span class="string">'file'</span>: open(<span class="string">'cookie.txt'</span>, <span class="string">'rb'</span>)&#125;</span><br><span class="line">response = requests.post(<span class="string">"http://httpbin.org/post"</span>, files=files)</span><br><span class="line">print(response.text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">返回值：</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">  "args": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "data": "", </span></span><br><span class="line"><span class="string">  "files": &#123;</span></span><br><span class="line"><span class="string">    "file": "#LWP-Cookies-2.0\r\nSet-Cookie3: BAIDUID=\"D2B4E137DE67E271D87F03A8A15DC459:FG=1\"; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: BIDUPSID=D2B4E137DE67E271D87F03A8A15DC459; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: H_PS_PSSID=25641_1465_21087_17001_22159; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; discard; version=0\r\nSet-Cookie3: PSTM=1516953672; path=\"/\"; domain=\".baidu.com\"; path_spec; domain_dot; expires=\"2086-02-13 11:15:12Z\"; version=0\r\nSet-Cookie3: BDSVRTM=0; path=\"/\"; domain=\"www.baidu.com\"; path_spec; discard; version=0\r\nSet-Cookie3: BD_HOME=0; path=\"/\"; domain=\"www.baidu.com\"; path_spec; discard; version=0\r\n"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "form": &#123;&#125;, </span></span><br><span class="line"><span class="string">  "headers": &#123;</span></span><br><span class="line"><span class="string">    "Accept": "*/*", </span></span><br><span class="line"><span class="string">    "Accept-Encoding": "gzip, deflate", </span></span><br><span class="line"><span class="string">    "Connection": "close", </span></span><br><span class="line"><span class="string">    "Content-Length": "909", </span></span><br><span class="line"><span class="string">    "Content-Type": "multipart/form-data; boundary=84835f570cfa44da8f4a062b097cad49", </span></span><br><span class="line"><span class="string">    "Host": "httpbin.org", </span></span><br><span class="line"><span class="string">    "User-Agent": "python-requests/2.18.4"</span></span><br><span class="line"><span class="string">  &#125;, </span></span><br><span class="line"><span class="string">  "json": null, </span></span><br><span class="line"><span class="string">  "origin": "183.64.61.29", </span></span><br><span class="line"><span class="string">  "url": "http://httpbin.org/post"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
 
@@ -531,7 +542,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-02-09T09:10:38.054Z" itemprop="dateUpdated">2020-02-09 17:10:38</time>
+    Last updated: <time datetime="2020-02-09T11:11:58.269Z" itemprop="dateUpdated">2020-02-09 19:11:58</time>
 </span><br>
 
 
