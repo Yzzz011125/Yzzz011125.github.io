@@ -560,9 +560,9 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2020/02/10/Scrapy%E6%A1%86%E6%9E%B6/" id="post-next" class="post-nav-link">
+      <a href="/2020/02/08/Python%E7%88%AC%E8%99%AB%E7%9F%A5%E8%AF%86%E7%82%B9/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Scrapy框架</h4>
+        <h4 class="title">Python爬虫知识点</h4>
       </a>
     </div>
   
@@ -581,6 +581,30 @@
 
 
 
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "K86Foqz4aO6SPYTonyVuSX3g-9Nh9j0Va",
+            appKey: "g9kSambqKIawCBSmCsGo4upP",
+            avatar: "mm",
+            placeholder: "Just do it",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
