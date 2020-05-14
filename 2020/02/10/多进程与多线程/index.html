@@ -21,16 +21,16 @@
     
     
     <meta name="keywords" content="Python,Python爬虫">
-    <meta name="description" content="多进程与多线程  （1）、多进程进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。凡是用于完成操作系统的各种功能的进程就是系统进程，而所有由你启动的进程都是用户进程。同理，多进程就是指计算机同时执行多个进程，一般是同时运行多个软件。 multiprocessing类似于threading模块支持生成进程的包，是Python的标准模块，它既可以用来编写多进程，也可以用来编写多">
+    <meta name="description" content="Python多进程与多线程  （1）、多进程进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。凡是用于完成操作系统的各种功能的进程就是系统进程，而所有由你启动的进程都是用户进程。同理，多进程就是指计算机同时执行多个进程，一般是同时运行多个软件。 multiprocessing类似于threading模块支持生成进程的包，是Python的标准模块，它既可以用来编写多进程，也可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多进程与多线程">
 <meta property="og:url" content="http://yoursite.com/2020/02/10/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Yzzz011125&#39;s Blog">
-<meta property="og:description" content="多进程与多线程  （1）、多进程进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。凡是用于完成操作系统的各种功能的进程就是系统进程，而所有由你启动的进程都是用户进程。同理，多进程就是指计算机同时执行多个进程，一般是同时运行多个软件。 multiprocessing类似于threading模块支持生成进程的包，是Python的标准模块，它既可以用来编写多进程，也可以用来编写多">
+<meta property="og:description" content="Python多进程与多线程  （1）、多进程进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。凡是用于完成操作系统的各种功能的进程就是系统进程，而所有由你启动的进程都是用户进程。同理，多进程就是指计算机同时执行多个进程，一般是同时运行多个软件。 multiprocessing类似于threading模块支持生成进程的包，是Python的标准模块，它既可以用来编写多进程，也可">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/Yzzz011125/Yzzz011125.github.io/master/img/PythonSpider-image/Thread.png">
 <meta property="article:published_time" content="2020-02-10T06:31:18.000Z">
-<meta property="article:modified_time" content="2020-02-10T06:39:32.920Z">
+<meta property="article:modified_time" content="2020-05-14T00:33:05.192Z">
 <meta property="article:author" content="Yzzz011125">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Python爬虫">
@@ -152,7 +152,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#多进程与多线程"><span class="post-toc-text">多进程与多线程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）、多进程"><span class="post-toc-text">（1）、多进程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）、多线程"><span class="post-toc-text">（2）、多线程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（3）、多进程与多线程的选择和区别"><span class="post-toc-text">（3）、多进程与多线程的选择和区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（4）、并行、并发、高并发等概念"><span class="post-toc-text">（4）、并行、并发、高并发等概念</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python多进程与多线程"><span class="post-toc-text">Python多进程与多线程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）、多进程"><span class="post-toc-text">（1）、多进程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）、多线程"><span class="post-toc-text">（2）、多线程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（3）、多进程与多线程的选择和区别"><span class="post-toc-text">（3）、多进程与多线程的选择和区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（4）、并行、并发、高并发等概念"><span class="post-toc-text">（4）、并行、并发、高并发等概念</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -172,7 +172,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="多进程与多线程"><a href="#多进程与多线程" class="headerlink" title="多进程与多线程"></a>多进程与多线程</h1><br/>
+            <h1 id="Python多进程与多线程"><a href="#Python多进程与多线程" class="headerlink" title="Python多进程与多线程"></a>Python多进程与多线程</h1><br/>
 
 <h3 id="（1）、多进程"><a href="#（1）、多进程" class="headerlink" title="（1）、多进程"></a>（1）、多进程</h3><p><strong>进程</strong>是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。凡是用于完成操作系统的各种功能的进程就是系统进程，而所有由你启动的进程都是用户进程。同理，多进程就是指计算机同时执行多个进程，一般是同时运行多个软件。</p>
 <p>multiprocessing类似于threading模块支持生成进程的包，是Python的标准模块，它既可以用来编写多进程，也可以用来编写多线程。如果是多线程的话，用multiprocessing.dummy即可，用法与multiprocessing基本相同。由于python使用全局解释器锁(GIL)，他会将进程中的线程序列化，也就是多核cpu实际上并不能达到并行提高速度的目的，而使用多进程则是不受限的，所以实际应用中都是推荐多进程的。</p>
@@ -476,7 +476,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-02-10T06:39:32.920Z" itemprop="dateUpdated">2020-02-10 14:39:32</time>
+    Last updated: <time datetime="2020-05-14T00:33:05.192Z" itemprop="dateUpdated">2020-05-14 08:33:05</time>
 </span><br>
 
 
